@@ -1,5 +1,9 @@
+#ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wshadow"
+#endif
+
+
 //  (C) Copyright 2008-10 Anthony Williams
 //  (C) Copyright 2011-2014 Vicente J. Botet Escriba
 //
@@ -5184,4 +5188,7 @@ namespace detail
 
 #endif // BOOST_NO_EXCEPTION
 #endif // header
+
+#ifdef __clang__
 #pragma clang diagnostic pop
+#endif

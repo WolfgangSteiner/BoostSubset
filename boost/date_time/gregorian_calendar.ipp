@@ -1,5 +1,8 @@
+#ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wconversion"
+#endif
+
 /* Copyright (c) 2002,2003 CrystalClear Software, Inc.
  * Use, modification and distribution is subject to the
  * Boost Software License, Version 1.0. (See accompanying
@@ -217,5 +220,7 @@ namespace date_time {
 
 
 } } //namespace gregorian
-#pragma clang diagnostic pop
 
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif

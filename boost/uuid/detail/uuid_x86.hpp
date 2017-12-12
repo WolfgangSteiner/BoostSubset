@@ -1,6 +1,7 @@
+#ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated"
-
+#endif
 /*
  *            Copyright Andrey Semashev 2013.
  * Distributed under the Boost Software License, Version 1.0.
@@ -111,4 +112,6 @@ inline bool operator< (uuid const& lhs, uuid const& rhs) BOOST_NOEXCEPT
 
 #endif // BOOST_UUID_DETAIL_UUID_X86_HPP_INCLUDED_
 
+#ifdef __clang__
 #pragma clang diagnostic pop
+#endif

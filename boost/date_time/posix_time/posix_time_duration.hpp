@@ -1,5 +1,7 @@
+#ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wconversion"
+#endif
 
 #ifndef POSIX_TIME_DURATION_HPP___
 #define POSIX_TIME_DURATION_HPP___
@@ -82,4 +84,7 @@ namespace posix_time {
 
 
 #endif
+
+#ifdef __clang__
 #pragma clang diagnostic pop
+#endif

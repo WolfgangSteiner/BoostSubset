@@ -1,5 +1,8 @@
+#ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wconversion"
+#endif
+
 #ifndef _DATE_TIME_INT_ADAPTER_HPP__
 #define _DATE_TIME_INT_ADAPTER_HPP__
 
@@ -509,4 +512,7 @@ private:
 
 
 #endif
+
+#ifdef __clang__
 #pragma clang diagnostic pop
+#endif
